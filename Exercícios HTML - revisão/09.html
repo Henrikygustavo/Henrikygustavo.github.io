@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tela de Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+
+        h2, form {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+        }
+
+        .input-group label {
+            display: block;
+            text-align: left;
+            margin-bottom: 5px;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Tela de Login</h2>
+        <form method="post">
+            <div class="input-group">
+                <span for="usuario">Usuário:</span>
+                <input placeholder="Usuário" type="text" id="usuario" name="usuario" required>
+            </div>
+            <div class="input-group">
+                <span for="senha">Senha:</span>
+                <input placeholder="Senha" type="password" id="senha" name="senha" required>
+            </div>
+            <button type="submit" class="btn">Entrar</button>
+        </form>
+    </div>
+    <hr>
+    <a href="index.html">Voltar</a>
+</body>
+</html>
