@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  table {
+    width: 100%;
+    background-color: red;
+    border: 3px solid blue;
+  }
+  th, td {
+    border: 3px solid blue;
+  }
+  th {
+    background-color: yellow;
+    text-align: left;
+  }
+  td {
+    text-align: center;
+  }
+  .cell-white {
+    background-color: white;
+    height: 40px;
+    vertical-align: bottom;
+  }
+  .cell-orange {
+    background-color: orange;
+    vertical-align: top;
+  }
+  .cell-yellow {
+    background-color: yellow;
+    text-align: right;
+  }
+</style>
+</head>
+<body>
+
+<table>
+  <caption>Tabela Mesclada</caption>
+  <tr>
+    <th style="width: 10%;" class="cell-yellow">A1</th>
+    <th style="width: 40%;" class="cell-white">A2</th>
+    <th style="width: 50%;" class="cell-orange">A3</th>
+    <th class="cell-orange">A4</th>
+  </tr>
+  <tr>
+    <td style="width: 10%;" rowspan="2" class="cell-yellow">B1</td>
+    <td style="width: 40%; height: 50px; background-color: orange; vertical-align: middle;">B2</td>
+    <td class="cell-white">B3</td>
+    <td style="width: 30%;" class="cell-yellow">B4</td>
+  </tr>
+  <tr>
+    <td class="cell-yellow">C1</td>
+    <td class="cell-yellow">C3</td>
+    <td class="cell-yellow">C4</td>
+  </tr>
+</table>
+<hr>
+<a href="index.html">Voltar</a>
+</body>
+</html>
