@@ -1,6 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade-18</title>
+</head>
 <style>
   table {
     width: 100%;
@@ -8,52 +13,76 @@
     border: 3px solid blue;
   }
   th, td {
-    border: 3px solid blue;
+    border: 1px solid blue;
+    padding: 8px;
+    text-align: left;
   }
   th {
     background-color: yellow;
-    text-align: left;
   }
   td {
-    text-align: center;
-  }
-  .cell-white {
     background-color: white;
-    height: 40px;
-    vertical-align: bottom;
   }
-  .cell-orange {
-    background-color: orange;
-    vertical-align: top;
-  }
-  .cell-yellow {
+  #a1 {
+    width: 10%;
+    text-align: left;
     background-color: yellow;
+  }
+  #a2 {
+    width: 40%;
+    height: 40px;
+    text-align: center;
+    vertical-align: baseline;
+    background-color: white;
+  }
+  #a3 {
+    width: 50%;
+    text-align: center;
+    vertical-align: top;
+    background-color: orange;
+  }
+  #a4 {
+    background-color: orange;
+  }
+  #b1, #c2, #c3 {
+    background-color: orange;
+  }
+  #b2 {
+    width: 40%;
+    height: 50px;
+    text-align: center;
+    background-color: orange;
+  }
+  #b3 {
+    background-color: orange;
+  }
+  #b4, #c4 {
+    width: 30%;
+    text-align: center;
+    background-color: yellow;
+  }
+  #c1 {
+    width: 10%;
     text-align: right;
+    background-color: orange;
   }
 </style>
-</head>
 <body>
-
-<table>
-  <caption>Tabela Mesclada</caption>
-  <tr>
-    <th style="width: 10%;" class="cell-yellow">A1</th>
-    <th style="width: 40%;" class="cell-white">A2</th>
-    <th style="width: 50%;" class="cell-orange">A3</th>
-    <th class="cell-orange">A4</th>
-  </tr>
-  <tr>
-    <td style="width: 10%;" rowspan="2" class="cell-yellow">B1</td>
-    <td style="width: 40%; height: 50px; background-color: orange; vertical-align: middle;">B2</td>
-    <td class="cell-white">B3</td>
-    <td style="width: 30%;" class="cell-yellow">B4</td>
-  </tr>
-  <tr>
-    <td class="cell-yellow">C1</td>
-    <td class="cell-yellow">C3</td>
-    <td class="cell-yellow">C4</td>
-  </tr>
-</table>
-
+    <table>
+        <caption>Tabela Mesclada</caption>
+        <tr>
+          <td id="a1" style="width: 10%;" rowspan="2">A1</td>
+          <td id="a2" style="width: 40%;text-align: center;vertical-align: bottom;">A2</td>
+          <td id="a3" style="width: 50%;text-align: center;vertical-align: top;" colspan="3">A3</td>
+        </tr>
+        <tr>
+          <td id="b2" style="width: 40%; height: 50px;text-align: center;" colspan="2">B2</td>
+          <td id="b4" style="width: 30%;text-align: center;" rowspan="2">B4</td>
+        </tr>
+        <tr>
+          <td id="c1" style="width: 10%;text-align: end;" colspan="3">C1</td>
+        </tr>
+    </table>
+    <br>
+    <a href="index.html"> Voltar</a>
 </body>
-</html>
