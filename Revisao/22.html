@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 22</title>
+</head>
+<style>
+    * {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    /* width: 100vw;
+    height: 100vh; */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+header {
+    width: 100%;
+    height: 15%;
+}
+
+main {
+    width: 100%;
+    height: 70%;
+    margin-bottom: 15%;
+    flex: 1;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.header-principal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-principal button {
+    padding: 5px;
+}
+
+.logo img {
+    width: 100px;
+}
+
+.sidebar {
+    width: 20%;
+    height: 70%;
+    float: left;
+}
+
+.sidebar-categoria {
+    margin-top: 30px;
+    padding: 10px;
+}
+
+.content-principal {
+    width: 80%;
+    height: 70%;
+    float: right;
+}
+
+img {
+    width: 100px;
+}
+
+.produtos-geral {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 16px 0px 0px 0px;
+
+}
+
+.menu-superior {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(117, 117, 117);
+    height: 35px;
+    padding: 0 20px;
+    color: white;
+}
+
+.menu-item {
+    padding: 0px 50px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.produtos-guia {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.produtos-superior {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.produto-maior img {
+    width: 97%;
+    height: 270px;
+    margin-top: 50px;
+    /* margin: 0 auto; */
+}
+
+.sidebar-categoria ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar-categoria ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.logo-verde {
+    width: 20px;
+    margin-right: 5px;
+}
+
+.guia {
+    padding: 10px;
+}
+
+.link-categoria {
+    text-decoration: none;
+    color: black;
+}
+
+#buscar-bolo{
+    padding: 4px;
+}
+</style>
+<body>
+    <header>
+        <div class="header-principal">
+            <div class="logo">
+                <img src="img/logo.png" alt="">
+            </div>
+            <div>
+                <button>login</button>
+                <button>carrinho</button>
+                <button>finalizar compra</button>
+                <input type="search" name="buscar" id="buscar-bolo">
+            </div>
+        </div>
+        <div class="menu-superior">
+            <a href="#" class="menu-item">MENU</a>
+            <a href="#" class="menu-item">MENU</a>
+            <a href="#" class="menu-item">MENU</a>
+            <a href="#" class="menu-item">MENU</a>
+            <a href="#" class="menu-item">MENU</a>
+        </div>
+    </header>
+    <main>
+        <div class="sidebar">
+            <div class="sidebar-categoria">
+                <h2>Categorias</h2>
+                <hr>
+                <ul>
+                    <li>
+                        <img src="img/logo-verde-agua.png" class="logo-verde" alt="">
+                        <a href="#" class="link-categoria">Categoria</a>
+                    </li>
+                    <li>
+                        <img src="img/logo-verde-agua.png" class="logo-verde" alt="">
+                        <a href="#" class="link-categoria">Categoria</a>
+                    </li>
+                    <li>
+                        <img src="img/logo-verde-agua.png" class="logo-verde" alt="">
+                        <a href="#" class="link-categoria">Categoria</a>
+                    </li>
+                    <li>
+                        <img src="img/logo-verde-agua.png" class="logo-verde" alt="">
+                        <a href="#" class="link-categoria">Categoria</a>
+                    </li>
+                    <li>
+                        <img src="img/logo-verde-agua.png" class="logo-verde" alt="">
+                        <a href="#" class="link-categoria">Categoria</a>
+                    </li>
+                    <li>
+                        <img src="img/logo-verde-agua.png" class="logo-verde" alt="">
+                        <a href="#" class="link-categoria">Categoria</a>
+                    </li>
+                    <li>
+                        <img src="img/logo-verde-agua.png" class="logo-verde" alt="">
+                        <a href="#" class="link-categoria">Categoria</a>
+                    </li>
+                    <li>
+                        <img src="img/logo-verde-agua.png" class="logo-verde" alt="">
+                        <a href="#" class="link-categoria">Categoria</a>
+                    </li>
+                    <li>
+                        <img src="img/logo-verde-agua.png" class="logo-verde" alt="">
+                        <a href="#" class="link-categoria">Categoria</a>
+                    </li>
+                    <li>
+                        <img src="img/logo-verde-agua.png" class="logo-verde" alt="">
+                        <a href="#" class="link-categoria">Categoria</a>
+                    </li>
+                    <li>
+                        <img src="img/logo-verde-agua.png" class="logo-verde" alt="">
+                        <a href="#" class="link-categoria">Categoria</a>
+                    </li>
+                    <li>
+                        <img src="img/logo-verde-agua.png" class="logo-verde" alt="">
+                        <a href="#" class="link-categoria">Categoria</a>
+                    </li>
+                    <li>
+                        <img src="img/logo-verde-agua.png" class="logo-verde" alt="">
+                        <a href="#" class="link-categoria">Categoria</a>
+                    </li>
+                    <li>
+                        <img src="img/logo-verde-agua.png" class="logo-verde" alt="">
+                        <a href="#" class="link-categoria">Categoria</a>
+                    </li>
+                    <li>
+                        <img src="img/logo-verde-agua.png" class="logo-verde" alt="">
+                        <a href="#" class="link-categoria">Categoria</a>
+                    </li>
+                    <li>
+                        <img src="img/logo-verde-agua.png" class="logo-verde" alt="">
+                        <a href="#" class="link-categoria">Categoria</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="guia">
+                <h2>Guia</h2>
+                <hr>
+                <ul>
+                    <li><a href="#" class="link-categoria">Guia</a></li>
+                    <li><a href="#" class="link-categoria">Guia</a></li>
+                    <li><a href="#" class="link-categoria">Guia</a></li>
+                    <li><a href="#" class="link-categoria">Guia</a></li>
+                    <li><a href="#" class="link-categoria">Guia</a></li>
+                    <li><a href="#" class="link-categoria">Guia</a></li>
+                    <li><a href="#" class="link-categoria">Guia</a></li>
+                </ul>
+            </div>
+            <div class="produtos-guia">
+                <img src="img/marca-verde.jpg" alt=""><br>
+                <img src="img/marca-verde.jpg" alt=""><br>
+                <img src="img/marca-verde.jpg" alt=""><br>
+            </div>
+            <div class="produtos-guia">
+                <a class="link-voltar" href="index.html"> Voltar</a>
+            </div>
+        </div>
+        <div class="content-principal">
+            <div class="produtos-header">
+                <div class="produto-maior">
+                    <img src="img/verde-agua.jpg" alt="">
+                </div>
+                <div class="produtos-superior">
+                    <img src="img/marca-verde.jpg" alt="">
+                    <img src="img/marca-verde.jpg" alt="">
+                    <img src="img/marca-verde.jpg" alt="">
+                </div>
+            </div>
+            <h2>Produtos Recentes</h2>
+            <hr>
+            <div class="produtos-geral">
+                <div>
+                    <img src="img/logo-verde-agua.png" alt="">
+                    <p>Nome</p>
+                    <p>Valor</p>
+                </div>
+                <div>
+                    <img src="img/logo-verde-agua.png" alt="">
+                    <p>Nome</p>
+                    <p>Valor</p>
+                </div>
+                <div>
+                    <img src="img/logo-verde-agua.png" alt="">
+                    <p>Nome</p>
+                    <p>Valor</p>
+                </div>
+                <div>
+                    <img src="img/logo-verde-agua.png" alt="">
+                    <p>Nome</p>
+                    <p>Valor</p>
+                </div>
+                <div>
+                    <img src="img/logo-verde-agua.png" alt="">
+                    <p>Nome</p>
+                    <p>Valor</p>
+                </div>
+                <div>
+                    <img src="img/logo-verde-agua.png" alt="">
+                    <p>Nome</p>
+                    <p>Valor</p>
+                </div>
+                <div>
+                    <img src="img/logo-verde-agua.png" alt="">
+                    <p>Nome</p>
+                    <p>Valor</p>
+                </div>
+                <div>
+                    <img src="img/logo-verde-agua.png" alt="">
+                    <p>Nome</p>
+                    <p>Valor</p>
+                </div>
+                <div>
+                    <img src="img/logo-verde-agua.png" alt="">
+                    <p>Nome</p>
+                    <p>Valor</p>
+                </div>
+                <div>
+                    <img src="img/logo-verde-agua.png" alt="">
+                    <p>Nome</p>
+                    <p>Valor</p>
+                </div>
+                <div>
+                    <img src="img/logo-verde-agua.png" alt="">
+                    <p>Nome</p>
+                    <p>Valor</p>
+                </div>
+                <div>
+                    <img src="img/logo-verde-agua.png" alt="">
+                    <p>Nome</p>
+                    <p>Valor</p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
