@@ -20,15 +20,12 @@
 
     <?php
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        // Obtenha os valores do formulário
         $valor1 = floatval($_POST["valor1"]);
         $valor2 = floatval($_POST["valor2"]);
         $valor3 = floatval($_POST["valor3"]);
 
-        // Calcule a soma dos valores
         $soma = $valor1 + $valor2 + $valor3;
 
-        // Verifique as condições e defina a cor do texto com base nas condições
         if ($valor1 > 10) {
             $cor = 'blue';
         } elseif ($valor2 < $valor3) {
@@ -36,10 +33,9 @@
         } elseif ($valor3 < $valor1 && $valor3 < $valor2) {
             $cor = 'red';
         } else {
-            $cor = 'black'; // Cor padrão se nenhuma das condições for atendida
+            $cor = 'black';
         }
 
-        // Imprima o resultado com a cor especificada
         echo "<p style='color: $cor;'>O resultado da soma é: $soma</p>";
     }
     ?>

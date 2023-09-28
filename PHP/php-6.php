@@ -47,7 +47,6 @@
 
     <?php
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        // Obtenha os preços por quilo e quantidades dos produtos do formulário
         $precoMaca = floatval($_POST["maca"]);
         $quantidadeMaca = floatval($_POST["quantidade_maca"]);
 
@@ -66,7 +65,6 @@
         $precoBatatinha = floatval($_POST["batatinha"]);
         $quantidadeBatatinha = floatval($_POST["quantidade_batatinha"]);
 
-        // Calcule o valor total da compra
         $valorTotal = ($precoMaca * $quantidadeMaca) +
                       ($precoMelancia * $quantidadeMelancia) +
                       ($precoLaranja * $quantidadeLaranja) +
@@ -74,10 +72,8 @@
                       ($precoCenoura * $quantidadeCenoura) +
                       ($precoBatatinha * $quantidadeBatatinha);
 
-        // Valor disponível que Joãozinho tem
         $dinheiroDisponivel = 50.00;
 
-        // Verifique se Joãozinho tem dinheiro suficiente para pagar a conta
         if ($valorTotal > $dinheiroDisponivel) {
             $diferenca = $valorTotal - $dinheiroDisponivel;
             echo "<p style='color: red;'>Joãozinho não tem dinheiro suficiente. Faltam R$ $diferenca.</p>";
@@ -88,7 +84,6 @@
             echo "<p style='color: blue;'>Joãozinho ainda pode gastar R$ $saldo.</p>";
         }
 
-        // Exiba o valor total da compra
         echo "O valor total da compra foi de R$ $valorTotal.";
     }
     ?>

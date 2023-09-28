@@ -14,10 +14,8 @@
 
     <?php
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        // Obtenha o número do formulário
         $numero = intval($_POST["numero"]);
 
-        // Verifique se o número é divisível por 2
         if ($numero % 2 == 0) {
             echo "<p>Valor divisível por 2</p>";
         } else {

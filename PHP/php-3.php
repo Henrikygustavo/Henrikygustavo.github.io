@@ -14,13 +14,10 @@
 
     <?php
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        // Obtenha o comprimento do lado do quadrado do formulário
         $comprimentoLado = floatval($_POST["lado"]);
 
-        // Calcule a área do quadrado
         $area = $comprimentoLado * $comprimentoLado;
 
-        // Exiba a frase com o resultado
         echo "A área do quadrado de lado $comprimentoLado metros é $area metros quadrados.";
     }
     ?>

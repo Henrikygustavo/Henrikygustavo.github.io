@@ -17,14 +17,11 @@
 
     <?php
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        // Obtenha a base e a altura do formulário
         $base = floatval($_POST["base"]);
         $altura = floatval($_POST["altura"]);
 
-        // Calcule a área do triângulo retângulo
         $area = ($base * $altura) / 2;
 
-        // Exiba a frase com o resultado
         echo "A área do triângulo retângulo com base $base metros e altura $altura metros é $area metros quadrados.";
     }
     ?>
